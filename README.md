@@ -1,77 +1,46 @@
-# Book Search
-
- <a href="https://sylvester-book-search.herokuapp.com/">![Deployed App](https://img.shields.io/badge/-Deployed-success?style=for-the-badge)</a>![Repo Size](https://img.shields.io/github/repo-size/CFsylvester/budget-tracker?color=inactive&style=for-the-badge)![Languages](https://img.shields.io/github/languages/count/CFsylvester/budget-tracker?color=inactive&style=for-the-badge)![Prominent Language](https://img.shields.io/github/languages/top/CFsylvester/budget-tracker?color=inactive&style=for-the-badge)
-
-## Description
-Book Search is a full stack MERN application. Book Search allows a user to search for any related book to the title search input using the Google Books API. Additionally, a user can create an account that provides access to save book functionality and dashboard. If a user logs out the saved books will persist.
-
-Book Search was refractored from an existing MERN app to utilize GraphQL implementations. The original RESTful API structure was transitioned to a GraphQL API using an Apollo Server. This was done through GraphQL queries and mutations. The purpose of changing the API structure is GraphQL lets you ask for what you want in a single query, saving bandwidth and reducing waterfall requests. It also enables clients to request their own unique data specifications therefore making the app faster. As a MERN application Book Search is created using MongoDB, Express, React and Node.js. 
-
-## Table of Contents
-  - [Usage](#Usage)
-  - [Installation](#installation)
-  - [Technology Used](#technology-used)
-  - [Questions](#questions)
-  - [Links](#links)
-  - [License](#license)
-  
-## Usage
-
-#### Application Homepage:
-
-![Homepage](./ReadME-images/search.png)
-
- #### Application Search Results:
-
-![Search Results](./ReadME-images/results.png)
-  
-  ## Installation
-  Node.js, NPM, and MongoDB must be installed on your computer. <br />
-  <br />Clone the repo: <br />
-      `git clone https://github.com/CFsylvester/book-search.git` <br />
-  <br />Navigate to the root directory and run: <br />
-      `npm install` <br />
-  <br />To start the server locally, run the following: <br />
-      `npm start` <br />
-  <br />Navigate to <b>localhost:3000</b> in your browser to open the application locally.
-
-  ## Technology/Dependencies Used
-  ![Mongoose.js](https://img.shields.io/badge/-Mongoose-white?style=for-the-badge)
-  ![Express.js](https://img.shields.io/badge/-Express-9cf?style=for-the-badge)
-  ![React](https://img.shields.io/badge/-React-white?style=for-the-badge)
-  ![Node.js](https://img.shields.io/badge/-Node.js-9cf?style=for-the-badge)
-  ![JavaScript](https://img.shields.io/badge/-Javascript-white?style=for-the-badge)
-  ![CSS](https://img.shields.io/badge/-CSS-9cf?style=for-the-badge)
-  ![HTML5](https://img.shields.io/badge/-HTML5-white?style=for-the-badge)
-  ![Apollo-Server](https://img.shields.io/badge/-Apollo--Server-9cf?style=for-the-badge)
-  ![bcrypt](https://img.shields.io/badge/-Bcrypt-white?style=for-the-badge)
-  ![JsonWebToken](https://img.shields.io/badge/-JsonWebToken-9cf?style=for-the-badge)
-  ![Nodemon](https://img.shields.io/badge/-Nodemon-white?style=for-the-badge)
-  ![Testing-Library/Jest-Dom](https://img.shields.io/badge/-Testing--Library/Jest--Dom-9cf?style=for-the-badge)
-  ![Testing-Library/React](https://img.shields.io/badge/-Testing--Library/React-white?style=for-the-badge)
-  ![Testing-Library/User-Event](https://img.shields.io/badge/-Testing--Library/User--Event-9cf?style=for-the-badge)
-  ![Bootstrap](https://img.shields.io/badge/-Bootstrap-white?style=for-the-badge)
-  ![JWT-Decode](https://img.shields.io/badge/-JWT--Decode-9cf?style=for-the-badge)
-  ![React-Bootstrap](https://img.shields.io/badge/-React--Bootstrap-white?style=for-the-badge)
-  ![React-Dom](https://img.shields.io/badge/-React--Dom-9cf?style=for-the-badge)
-  ![React-Router-Dom](https://img.shields.io/badge/-React--Router--Dom-white?style=for-the-badge)
-  ![React-Scripts](https://img.shields.io/badge/-React--Scripts-9cf?style=for-the-badge)
-  ![If-Env](https://img.shields.io/badge/-If--Env-white?style=for-the-badge)
-  ![Concurrently](https://img.shields.io/badge/-Concurrently-9cf?style=for-the-badge)
-  ![GraphQL](https://img.shields.io/badge/-GraphQL-white?style=for-the-badge)
-    <br />
-  
-  ![Heroku](https://img.shields.io/badge/Server-Heroku-inactive?style=for-the-badge)![MongoDB](https://img.shields.io/badge/Database-MongoDb-inactive?style=for-the-badge)![MongoDB Atlas](https://img.shields.io/badge/Cloud%20Database-MongoDB%20Atlas-inactive?style=for-the-badge) 
-  
-  ## Questions
-  Please reach out to me at [clairesylvester@clairecodes.dev](mailto:clairesylvester@clairecodes.dev?subject=[GitHub%book-search]%20Source%20Han%20Sans)
-
-  ## Links
-  - **[Deployed App](https://sylvester-budget-tracker.herokuapp.com/)**
-  - **[GitHub Repo](https://github.com/CFsylvester/book-search)**
-  - **[My Portfolio](clairecodes.dev)**
-  - **[Connect on LinkedIn](https://www.linkedin.com/in/claire-sylvester-386373143/)**
-  - **[GitHub profile](https://github.com/CFsylvester)    ![Github Followers](https://img.shields.io/github/followers/CFsylvester?style=social)**
-
-  ## License 
-  This application uses the MIT license.  
+# book-search-engine
+  ## User Story:
+  AS AN avid reader
+  I WANT to search for new books to read
+  SO THAT I can keep a list of books to purchase
+  ## Acceptance Criteria:
+  GIVEN a book search engine
+WHEN I load the search engine
+THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
+WHEN I click on the Search for Books menu option
+THEN I am presented with an input field to search for books and a submit button
+WHEN I am not logged in and enter a search term in the input field and click the submit button
+THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
+WHEN I click on the Login/Signup menu option
+THEN a modal appears on the screen with a toggle between the option to log in or sign up
+WHEN the toggle is set to Signup
+THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
+WHEN the toggle is set to Login
+THEN I am presented with two inputs for an email address and a password and login button
+WHEN I enter a valid email address and create a password and click on the signup button
+THEN my user account is created and I am logged in to the site
+WHEN I enter my account’s email address and password and click on the login button
+THEN I the modal closes and I am logged in to the site
+WHEN I am logged in to the site
+THEN the menu options change to Search for Books, an option to see my saved books, and Logout
+WHEN I am logged in and enter a search term in the input field and click the submit button
+THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
+WHEN I click on the Save button on a book
+THEN that book’s information is saved to my account
+WHEN I click on the option to see my saved books
+THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
+WHEN I click on the Remove button on a book
+THEN that book is deleted from my saved books list
+WHEN I click on the Logout button
+THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
+  ## Table of Contents 
+  - [Description](#description)
+  - [Contact Me](#contact-me)
+  - [application](#application)
+  ## Description:
+  The application is a book search engine.
+  ## application:
+  [https://rugged-virgin-islands-09201.herokuapp.com/]
+  ## Contact Me:
+  - Github: [joshahuynh](https://github.com/joshahuynh)
+  - Email: joshahuynh@gmail.com 
